@@ -5,11 +5,11 @@ interface IProps {
 }
 
 const DashboardLayout: FC<IProps> = ({ children }): JSX.Element => {
-    return (
-        <section>
-            {children}
-        </section>
-    )
+    const isLoggedIn = true;
+
+    return isLoggedIn 
+                ? <div>{children}</div> 
+                : <div>login</div>;
 }
 
 export default DashboardLayout
