@@ -1,5 +1,19 @@
-import { FC } from 'react'
+'use client';
+import { useRouter } from 'next/navigation';
 
-const Home: FC = (): JSX.Element => <div>Home</div>
+import { FC, MouseEventHandler } from 'react'
+
+
+const Home: FC = (): JSX.Element => {
+    const router = useRouter();
+
+    const handleRouter: MouseEventHandler = () => router.push('/dashboard');
+
+    return (
+        <button type="button" onClick={handleRouter}>
+            Open Dashboard
+        </button>
+    )
+}
 
 export default Home

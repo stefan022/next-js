@@ -5,7 +5,7 @@ import { routeParam } from '@/constants/routeParam'
 
 const Settings: FC = (): JSX.Element => 
     <SettingsTemplate key={routeParam} >
-        <div>Settings</div>
+        <div>These are settings</div>
     </SettingsTemplate>
 
 export default Settings
