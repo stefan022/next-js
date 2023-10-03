@@ -7,6 +7,7 @@ const Dashboard: FC = (): JSX.Element => {
     return (
         <DashboardLayout>
             <p>Welcome to the Dashboard</p>
+            <Link href={"/dashboard/products"}>Products</Link>
             <Link href={"/dashboard/settings"}>Settings</Link>
         </DashboardLayout>
     )
