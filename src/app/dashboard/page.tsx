@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
-const Dashboard: FC = (): JSX.Element => <div>Dashboard</div>
+import DashboardLayout from './layout'
+
+const Dashboard: FC = (): JSX.Element => <DashboardLayout><p>Welcome to the Dashboard</p></DashboardLayout>
 
 export default Dashboard
