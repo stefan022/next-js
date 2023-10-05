@@ -2,7 +2,7 @@
 
 import { FC, MouseEventHandler } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from "./style.module.scss";
+import "./style.scss"
 
 const Home: FC = (): JSX.Element => {
     const router = useRouter();
@@ -10,10 +10,10 @@ const Home: FC = (): JSX.Element => {
     const handleRouter: MouseEventHandler = () => router.push('/dashboard');
 
     return (
-        <button 
-            type="button" 
+        <button
+            type="button"
             onClick={handleRouter}
-            className={styles.button}
+            className="button"
         >
             Open Dashboard
         </button>
