@@ -4,9 +4,9 @@ import { FC, ReactNode } from "react"
 import { exo_2 } from "@/constants/googleFont/exo_2"
 import Script from "next/script";
 import { onLoad } from "@/script/onLoad";
-
-import "../scss/main.scss"
 import { metadata } from "@/constants/metadata";
+
+import "@/scss/main.scss"
 
 interface IProps {
     children: ReactNode;
