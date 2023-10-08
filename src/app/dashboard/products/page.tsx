@@ -1,6 +1,8 @@
-import Link from 'next/link'
 import { FC, Suspense } from 'react'
-import Loading from './loading'
+
+import dynamic from 'next/dynamic'
+const Link = dynamic(() => import("next/link"));
+const Loading = dynamic(() => import("./loading"));
 
 const Products: FC = (): JSX.Element => {
     return (

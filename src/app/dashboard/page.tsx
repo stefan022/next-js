@@ -2,11 +2,13 @@
 
 import { FC } from 'react'
 
-import DashboardLayout from './layout'
-import Link from 'next/link'
-import Error from './error'
 import { ErrorBoundary } from '@/error/ErrorBoundary'
 import { resetFunc } from '@/helpers/resetFunc'
+
+import dynamic from 'next/dynamic';
+const Link = dynamic(() => import("next/link"));
+const Error = dynamic(() => import("./error"));
+const DashboardLayout = dynamic(() => import("./layout"));
 
 const Dashboard: FC = (): JSX.Element => {
     return (

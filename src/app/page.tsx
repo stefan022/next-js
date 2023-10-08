@@ -2,8 +2,10 @@
 
 import { FC, MouseEventHandler } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import wallpaper from "../assets/wallpaper.jpg";
+
+import dynamic from 'next/dynamic';
+const Image = dynamic(() => import("next/image"));
 
 import "./style.scss"
 
