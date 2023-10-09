@@ -16,6 +16,8 @@ const RootLayout: FC<IProps> = ({ children }): JSX.Element => {
     return (
         <html lang="en">
              <head>
+                <meta property="og:title" content="My Next.js Application" />
+                <meta property="og:description" content="This web application uses Next.js for my practice and testing various functionalities." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon" />
                 <title>{metadata.title as string}</title>
