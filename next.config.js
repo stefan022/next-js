@@ -14,6 +14,7 @@ const nextConfig = {
     experimental: {
         mdxRs: true,
     },
+    poweredByHeader: false,
 }
 
 module.exports = withMDX(nextConfig);
