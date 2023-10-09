@@ -5,6 +5,7 @@ import { exo_2 } from "@/constants/googleFont/exo_2"
 import Script from "next/script";
 import { onLoad } from "@/script/onLoad";
 import { metadata } from "@/constants/metadata";
+import { WebVitals } from "@/components/web-vitals";
 
 import "@/scss/main.scss"
 
@@ -22,7 +23,10 @@ const RootLayout: FC<IProps> = ({ children }): JSX.Element => {
                 <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon" />
                 <title>{metadata.title as string}</title>
             </head>
-            <body className={`${exo_2.variable}`}>{children}</body>
+            <body className={`${exo_2.variable}`}>
+                <WebVitals />
+                {children}
+            </body>
             <Script
                 src="https://code.jquery.com/jquery-3.6.0.min.js"
                 onLoad={onLoad}

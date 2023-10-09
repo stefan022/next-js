@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, MouseEventHandler } from 'react';
+import { FC, MouseEventHandler} from 'react';
 import { useRouter } from 'next/navigation';
 import wallpaper from "@/assets/wallpaper.jpg";
 
