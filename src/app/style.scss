@@ -9,3 +9,9 @@
         @apply object-cover;
     }
 }
+
+.not {
+    &-found {
+        @apply w-full h-screen flex justify-center items-center flex-col;
+    }
+}
