@@ -15,6 +15,7 @@ const nextConfig = {
         mdxRs: true,
     },
     poweredByHeader: false,
+    reactStrictMode: true,
 }
 
 module.exports = withMDX(nextConfig);
