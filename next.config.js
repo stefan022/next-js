@@ -10,7 +10,10 @@ const nextConfig = {
     },
     env: {
         nextCustomKey: process.env.NEXT_CUSTOM_KEY
-    }
+    },
+    experimental: {
+        mdxRs: true,
+    },
 }
 
 module.exports = withMDX(nextConfig);
