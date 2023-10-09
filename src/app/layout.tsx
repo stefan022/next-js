@@ -17,6 +17,7 @@ const RootLayout: FC<IProps> = ({ children }): JSX.Element => {
         <html lang="en">
              <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon" />
                 <title>{metadata.title as string}</title>
             </head>
             <body className={`${exo_2.variable}`}>{children}</body>
