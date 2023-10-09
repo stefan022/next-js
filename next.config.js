@@ -8,6 +8,9 @@ const nextConfig = {
     devIndicators: {
         buildActivity: false,
     },
+    env: {
+        nextCustomKey: process.env.NEXT_CUSTOM_KEY
+    }
 }
 
 module.exports = withMDX(nextConfig);

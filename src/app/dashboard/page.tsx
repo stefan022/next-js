@@ -20,6 +20,7 @@ const Dashboard: FC = (): JSX.Element => {
                 /> 
             }>
                 <p>Welcome to the Dashboard</p>
+                <p>The value of customKey is: {process.env.nextCustomKey}</p>
                 <Link href={"/dashboard/products"}>Products</Link>
                 <Link href={"/dashboard/settings"}>Settings</Link>
             </ErrorBoundary>
